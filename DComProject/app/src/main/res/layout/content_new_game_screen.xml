@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_new_game_screen" tools:context=".NewGameScreen">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/New_Game"
+        android:id="@+id/newGame"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/leagueGame"
+        android:layout_alignStart="@+id/leagueGame"
+        android:layout_alignRight="@+id/leagueGame"
+        android:layout_alignEnd="@+id/leagueGame" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/league_view"
+        android:id="@+id/leagueGame"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/newGame"
+        android:layout_alignLeft="@+id/howToPlay"
+        android:layout_alignStart="@+id/howToPlay" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/how_to_play"
+        android:id="@+id/howToPlay"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/leagueGame"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/game_match"
+        android:id="@+id/gameMatch"
+        android:layout_below="@+id/howToPlay"
+        android:layout_alignLeft="@+id/howToPlay"
+        android:layout_alignStart="@+id/howToPlay"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/adminLogin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/gameMatch"
+        android:layout_alignStart="@+id/gameMatch"
+        android:layout_alignRight="@+id/leagueGame"
+        android:layout_alignEnd="@+id/leagueGame" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/myFAB"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/dartboard"
+        app:elevation="5dp"
+        app:backgroundTint="#FCFCFC"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        app:borderWidth="0dp"
+        app:rippleColor="#000000" />
+
+</RelativeLayout>
