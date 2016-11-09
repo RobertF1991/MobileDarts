@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_one__player"
+    tools:context="com.example.rob.dcomproject.One_Player">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a501"
+        android:id="@+id/fiveOh"
+        android:layout_marginTop="58dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/threeOh"
+        android:layout_alignEnd="@+id/threeOh"
+        android:layout_alignLeft="@+id/threeOh"
+        android:layout_alignStart="@+id/threeOh" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/a301"
+        android:id="@+id/threeOh"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/fiveOh"
+        android:layout_alignRight="@+id/checkOut"
+        android:layout_alignEnd="@+id/checkOut"
+        android:layout_alignLeft="@+id/checkOut"
+        android:layout_alignStart="@+id/checkOut" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkout_mode"
+        android:id="@+id/checkOut"
+        android:layout_below="@+id/threeOh"
+        android:layout_alignLeft="@+id/unlim"
+        android:layout_alignStart="@+id/unlim"
+        android:layout_marginTop="73dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unlimited_mode"
+        android:id="@+id/unlim"
+        android:layout_below="@+id/checkOut"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+</RelativeLayout>
